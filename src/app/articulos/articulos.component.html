@@ -1,0 +1,54 @@
+
+<div class="global">
+  
+    <nav class="nav">
+        <a class="nav-link" href="#">Home</a>
+        <a class="nav-link" href="#">News</a>
+        <a class="nav-link" href="#">Metro</a>
+        <a class="nav-link" href="#">Sports</a>
+        <a class="nav-link" href="#">Opinion</a>
+        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Business</a>
+        <div class="justify-content-end ">
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-google-plus-g"></i>
+            <i class="fab fa-whatsapp"></i> 
+        </div>
+      </nav>
+      
+
+<div class="container">
+    <h1>The Daily Telegraph</h1>
+    
+    <div class="row">
+        <div class="col-2">
+        <ul class="lista">
+            <li>World</li>
+            <li>Lifestyle</li>
+            <li>Entertainment</li>
+            <li>Politics</li>
+            <li>Tv</li>
+            <li>Trends</li> 
+        </ul>
+        </div>
+        <div class="col-10">
+            <div class="row">
+                <div class="col-12 col-sm-6 col-md-4 columna" *ngFor="let articulo of _data.articulos; let i = index">
+                    <div class="card">
+                        <img src="{{articulo['urlToImage']}}" class="card-img-top" alt="...">
+
+                        <div class="card-body">
+                        <p>{{articulo["title"]}}</p>
+                        <p>{{articulo["description"]}}</p>
+                        </div>
+                        <button routerLink="/titulares/{{i}}">IR</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<div class="pie">
+<footer>Update Privace Policy | Terms of Use | Press | Contact Us | Cookies Policy</footer></div>
+</div>

@@ -1,0 +1,39 @@
+  <div class="global">
+ <nav class="nav">
+  <a class="nav-link" routerLink="/articulos/">Home</a>
+  <a class="nav-link" href="#">News</a>
+  <a class="nav-link" href="#">Metro</a>
+  <a class="nav-link" href="#">Sports</a>
+  <a class="nav-link" href="#">Opinion</a>
+  <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Bussines</a>
+  <div class="justify-content-end ">
+    <i class="fab fa-twitter"></i>
+    <i class="fab fa-google-plus-g"></i>
+    <i class="fab fa-whatsapp"></i> 
+</div>
+</nav>
+
+  <div class="container">
+    <div class="row">
+        <div class="col-sm-3"></div>
+        <div class="col-sm-4">
+           <h1>Telegraph News</h1>
+           <div class="card">
+             <div class="card-pri">
+              <h5 class="card-title">{{_data.articulos[articulo]["title"]}}</h5>
+              
+              <img class="imagen" src= "{{_data.articulos[articulo]['urlToImage']}}" >
+              <p class="card-text"></p>
+             
+            </div>
+            <div class="col-sm-5"></div>
+          </div>
+
+      <a href="{{_data.articulos[articulo].url}}"><button class="btn btn-dark">Read More</button></a> 
+           
+         
+        </div>
+    </div>
+  </div>
+ <div class="pie"><footer >Update Privace Policy | Terms of Use | Press | Contact Us | Cookies Policy</footer></div>
+</div>

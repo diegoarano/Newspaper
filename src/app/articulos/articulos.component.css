@@ -55,3 +55,9 @@ h1{
     left: 780px;
    
 }
+
+.boton{
+    color: rgb(255, 255, 255);
+    background-color:#0165B3;
+    font-weight: bolder;
+}

@@ -22,8 +22,7 @@ export class DataService {
 
 
 
-    _http.get("https://cors-anywhere.herokuapp.com/http://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=4a6118e85dc049a5b4225cb7b8923623",
-    httpConfig)
+    _http.get("https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=4a6118e85dc049a5b4225cb7b8923623")
     .subscribe((responseApi) => {
       this.articulos = responseApi["articles"]
         console.log(responseApi)

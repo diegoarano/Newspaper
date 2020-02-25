@@ -13,10 +13,12 @@ import {HttpClientModule} from '@angular/common/http';
 
 
 import { DataService } from './services/data.service';
+import { ErrorComponent } from './error/error.component';
 
 const RouterConfig: Routes =[
   {"path":"titulares/:indice", "component":TitularesComponent},
   {"path":"articulos", "component":ArticulosComponent},
+  {"path":"**", "component":ErrorComponent},
 
 ]
 
@@ -24,7 +26,8 @@ const RouterConfig: Routes =[
   declarations: [
     AppComponent,
     TitularesComponent,
-    ArticulosComponent
+    ArticulosComponent,
+    ErrorComponent
   ],
   imports: [
     BrowserModule,
